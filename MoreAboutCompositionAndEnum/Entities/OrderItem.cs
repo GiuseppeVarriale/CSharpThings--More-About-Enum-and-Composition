@@ -9,15 +9,24 @@ namespace MoreAboutCompositionAndEnum.Entities
     {
         public int Quantity { get; set; }
         public double Price { get; set; }
-        
+        public Product Product { get; set; }
+
         public OrderItem()
         {
         }
 
-        public OrderItem(int quantity, double price)
+        public OrderItem(int quantity, Product product)
         {
             Quantity = quantity;
-            Price = price;
+            Price = product.Price;
         }
+
+        public double SubTotal(int quantity, double price)
+        {
+            double subtotal = quantity * price;
+            return subtotal;
+        }
+
+
     }
 }
