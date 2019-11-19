@@ -21,9 +21,9 @@ namespace MoreAboutCompositionAndEnum.Entities
             Price = product.Price;
         }
 
-        public double SubTotal(int quantity, double price)
+        public double SubTotal()
         {
-            double subtotal = quantity * price;
+            double subtotal = Quantity * Price;
             return subtotal;
         }
 
