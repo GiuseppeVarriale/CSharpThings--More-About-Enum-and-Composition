@@ -19,6 +19,7 @@ namespace MoreAboutCompositionAndEnum.Entities
         {
             Quantity = quantity;
             Price = product.Price;
+            Product = product;
         }
 
         public double SubTotal()
