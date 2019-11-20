@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace MoreAboutCompositionAndEnum.Entities.Enums
+﻿namespace MoreAboutCompositionAndEnum.Entities.Enums
 {
     enum OrderStatus : int
     {
